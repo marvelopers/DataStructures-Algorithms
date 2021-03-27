@@ -59,3 +59,4 @@ function stackFactorial(n) {
   }
   return product;
 }
+
