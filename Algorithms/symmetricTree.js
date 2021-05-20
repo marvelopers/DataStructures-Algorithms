@@ -1,3 +1,5 @@
+// 성능 95% 메모리 100%
+
 var isSymmetric = function (root) {
   if (root === null) return true;
   return symmetryChecker(root.left, root.right);
