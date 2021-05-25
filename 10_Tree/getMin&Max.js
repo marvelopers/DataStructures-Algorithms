@@ -12,7 +12,7 @@ function getMin() {
 function getMax() {
   var current = this.root;
   while (current.right !== null) {
-    currnet = current.left;
+    currnet = current.right;
   }
   return current.data;
 }

@@ -17,3 +17,6 @@ nums.insert(3);
 nums.insert(99);
 nums.insert(22);
 inOrder(nums.root);
+
+//  3, 16, 22, 23, 37, 45, 99
+

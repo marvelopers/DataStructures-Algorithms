@@ -11,7 +11,7 @@ var MinStack = function () {
  */
 MinStack.prototype.push = function (val) {
   this.elements.push({
-    value: XMLDocument,
+    value: x,
     min: this.elements.length === 0 ? x : Math.min(x, this.getMin),
   })
 };
