@@ -125,3 +125,8 @@ function moveTo(position) {
 function getElement() {
   return this.dataStore[this.pos];
 }
+
+// searchList
+for (names.front; names.currPos() < names.length; names.next()) {
+  print(names.getElement)
+}
