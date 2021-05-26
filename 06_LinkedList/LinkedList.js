@@ -20,3 +20,51 @@ function LinkedList() {
   this.display = display;
 }
 
+function find(item) {
+  const currNode = this.head;
+  while (currNode.element !== item) {
+    currNode = currNode.next;
+  }
+  return currNode;
+}
+
+function insert(newElement, item) {
+  const newNode = new Node(newElement);
+  const currNode = this.find(item);
+  newNode.next = currNode.next;
+  current.next = newNode;
+}
+
+function display() {
+  const currNode = this.head;
+  while (!(currNode.next === null)) {
+    print(currNode.next.element);
+    currNode = currNode.next;
+  }
+}
+
+function findPrevious(item) {
+  const currNode = this.head;
+  while (currNode.next !== null && currNode.next.element !== item) {
+    currNode = currNode.next;
+  }
+  return currNode;
+}
+
+function remove(item) {
+  const prevNode = this.findPrevious(item);
+  if (prevNode.next !== null) {
+    prevNode.next = prevNode.next.next;
+  }
+}
+
+// CITY LIST
+
+const cities = new List();
+cities.insert('Seoul', 'head');
+cities.insert('Suwon', 'Seoul');
+cities.insert('Wonju', 'Suwon');
+cities.display();
+
+cities.remove('Suwon');
+cities.display();
