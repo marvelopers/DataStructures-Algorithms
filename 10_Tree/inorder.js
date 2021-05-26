@@ -1,7 +1,7 @@
 import BTS from './binarySearchTree';
 
 function inOrder(node) {
-  if (!(node === null)) {
+  if (node !== null) {
     inOrder(node.left);
     putStr(node.show() + '');
     inOrder(node.right);

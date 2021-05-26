@@ -37,7 +37,7 @@ function insert(newElement, item) {
 
 function display() {
   const currNode = this.head;
-  while (!(currNode.next === null)) {
+  while (currNode.next !== null) {
     print(currNode.next.element);
     currNode = currNode.next;
   }
