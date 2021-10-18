@@ -17,3 +17,9 @@ const checkBrackets=(str)=>{
 }
 
 checkBrackets(str);
+
+const solution  = () =>{
+  for(let x of str){
+    x==='(' ? stack.push('x') : stack.pop(); 
+  }
+}
