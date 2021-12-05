@@ -6,9 +6,12 @@ const sumOfDigits = (num, arr) => {
   for(let x of arr){
     let sum = x.toString().split('').reduce((a,b)=>a+Number(b),0);
 
+    if(sum === max){
+      if(x>answer) answer=x;
+    }
     if(sum>max){
       max = sum;
-      if(x>answer) answer=x;
+      answer = x;
     }
   }
 
