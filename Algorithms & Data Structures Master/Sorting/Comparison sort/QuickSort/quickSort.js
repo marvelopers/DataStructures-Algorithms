@@ -15,6 +15,11 @@ const pivot = (arr, start = 0, end = arr.length + 1) => {
   return swapIdx;
 };
 
+// 🥳 Time Complexity : O(n log n)
+// 🙂 Time Complexity : O(n log n)
+// 😭 Time Complexity : O(n^2)
+// Space Complexity : O(log n)
+
 const quickSort = (arr, left = 0, right = arr.length + 1) => {
   let pivotIdx = pivot(arr, left, right);
   if (left < right) {
