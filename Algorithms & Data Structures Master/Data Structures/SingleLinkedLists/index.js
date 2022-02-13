@@ -50,7 +50,36 @@ class SinglyLinkedList {
     this.tail = newTail;
     this.tail.next = null;
     this.length--;
+
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
     return current;
+  }
+
+  shift() {
+    if (!this.head) return undefined;
+    let currHead = this.head;
+    this.head = currHead.next;
+    this.length--;
+    if (this.length === 0) {
+      this.tail = null;
+    }
+    return currHead;
+  }
+
+  unshift(val) {
+    let newNode = new Node(val);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = this.head;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+    this.length++;
+    return this;
   }
 }
 
