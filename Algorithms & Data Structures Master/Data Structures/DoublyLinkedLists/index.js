@@ -70,4 +70,9 @@ class DoublyLinkedLists {
     this.length++;
     return this;
   }
+
+  get(index) {
+    let cnt = 0;
+    if (index < 0 || this.length <= index) return undefined;
+  }
 }
